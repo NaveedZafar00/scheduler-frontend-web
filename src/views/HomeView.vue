@@ -1,12 +1,15 @@
 <template>
   <div class="home">
     <div class="mainWrapper">
+      
       <div>
         <img src="@/assets/images/IU_Image.jpg" alt="UniversityImage" />
       </div>
+
       <div class="login-form-wrapper">
         <div class="login-form">
           <img src="@/assets/images/IU_Logo.jpg" alt="Logo" />
+
           <div class="inputWithLabel">
             <div>Login</div>
             <div class="input-wrapper">
@@ -35,6 +38,7 @@
           <Button :label="'Login'" />
         </div>
       </div>
+      
     </div>
   </div>
 </template>
