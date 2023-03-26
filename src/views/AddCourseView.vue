@@ -26,7 +26,19 @@
         </div>
       </div>
 
-      <div>qqq</div>
+      <div>
+        <div class="admin-logout-wrapper">
+          <div class="admin-logo-image">
+            <img src="@/assets/images/admin_avatar.png" alt="admin avatar">
+            Admin
+          </div>
+        </div>
+        
+        <div>
+          Add course buttons 
+          <Button :label="'Add course'" />
+        </div>
+      </div>
       
     </div>
   </div>
@@ -50,6 +62,18 @@ export default {
 };
 </script>
 <style scoped>
+
+.admin-logo-image{
+  padding-left: 980px;
+  padding-top: 13px;
+  padding-right: 50px;
+  padding-bottom: 13px;
+}
+
+.admin-logout-wrapper{
+  width: 1188px;
+  height: 84px;
+}
 
 .generator-button{
   padding: 12px 24px;
