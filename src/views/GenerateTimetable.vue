@@ -42,12 +42,12 @@
   <div class="row content">
     <div class="col-sm-3 sidenav">
   <br>
-      <ul class="nav nav-pills nav-stacked" style="position:relative; right:40px">
+      <ul class="nav nav-pills nav-stacked" style="position:relative;right:40px">
         <li></li>
         <li>
             <div style="position:relative;">
                 <img src="@/assets/images/courseslisti119-tuje.svg" style="position: relative;right: 40px;">
-                <a href="#" v-on:click="ListCourse" style="position: relative; right: 30px;font-family: Montserrat;color:black">
+                <a href="#" v-on:click="ListCourse" style="position: relative;right: 30px;font-family: Montserrat;color:black">
                     List of Courses</a>
             </div>
         </li>
