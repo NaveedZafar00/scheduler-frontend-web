@@ -25,6 +25,12 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/GenerateTimetable"),
   },
+  {
+    path: "/listofcourses",
+    name: "listofcourses",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/ListofCoursesView"),
+  },
 ];
 
 const router = createRouter({

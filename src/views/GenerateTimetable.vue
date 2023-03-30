@@ -145,7 +145,7 @@ import router from '@/router';
         router.push({ path: '../'})
         },
       AddCourse(){
-        router.push({ path: '../'}) //Need to add addcoursepage route..
+        router.push({ path: '../addcourse'}) //Need to add addcoursepage route..
       }, 
       ListCourse(){
         router.push({ path: '../'}) //Need to add List of courses route..
