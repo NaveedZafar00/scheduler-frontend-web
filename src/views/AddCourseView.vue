@@ -22,127 +22,131 @@
             <img src="@/assets/icons/timetable_generator.png" alt="Add logo" class="menu-icon">
             Generator
           </div>
-          
         </div>
-      </div>
-      <div class="flex-page-container">
-      <div>
-        <div class="admin-logout-wrapper">
-          <div class="admin-logo-image">
-            <img src="@/assets/images/admin_avatar.png" alt="admin avatar">
-            Admin
-          </div>
-        </div>
-        
-        <div>
-          <div class="page-label-text">
-            Add course buttons 
-            <img src="@/assets/icons/line_under_PageLabel.png" alt="rectangle_line" >
-          </div>
-
-          <div class="inputWithLabel">
-            <div>Course Name</div>
-            <div class="input-wrapper">
-              <input type="text" class="input-field" placeholder="Course Name">
-            </div>
-          </div>
-
-          <div class="inputWithLabel">
-            <div>Professor</div>
-            <div class="input-wrapper">
-              <input type="text" class="input-field" placeholder="Professor">
-            </div>
-          </div>
-
-          <div class="inputWithLabel">
-            <div>Room number</div>
-            <div class="input-wrapper">
-              <input type="text" class="input-field" placeholder="Room number">
-            </div>
-          </div>
-          
-          <div class="inputWithLabel">
-            <div>Additional Lecturer</div>
-            <div class="input-wrapper">
-              <input type="text" class="input-field" placeholder="Additional Lecturer">
-            </div>
-          </div>
-
-          <div id="group1" class="radio-online-offline">
-            <div class="form_radio">
-	            <input id="radio-online-1" type="radio" name="radio" value="1" checked>
-	            <label for="radio-online-1">Online course</label>
-            </div>
- 
-            <div class="form_radio">
-	            <input id="radio-online-2" type="radio" name="radio" value="2">
-	            <label for="radio-online-2">Offline course</label>
-            </div>
-          </div>
-
-          <div class="text-for-whom-course"> For whom is this course:</div>
-
-          <div id="group2" class="radio-for-whom-block">
-
-            <div class="form_radio">
-	            <input id="radio-whom-1" type="radio" name="radio1" value="1" checked>
-	            <label for="radio-whom-1">BS_1</label>
-            </div>
- 
-            <div class="form_radio">
-	            <input id="radio-whom-2" type="radio" name="radio1" value="2">
-	            <label for="radio-whom-2">BS_2</label>
-            </div>
-
-            <div class="form_radio">
-	            <input id="radio-whom-3" type="radio" name="radio1" value="3">
-	            <label for="radio-whom-3">BS_3</label>
-            </div>
-
-            <div class="form_radio">
-	            <input id="radio-whom-4" type="radio" name="radio1" value="4">
-	            <label for="radio-whom-4">BS_4</label>
-            </div>
-
-            <div class="form_radio">
-	            <input id="radio-whom-5" type="radio" name="radio1" value="5">
-	            <label for="radio-whom-5">MS_1</label>
-            </div>
-
-            <div class="form_radio">
-	            <input id="radio-whom-6" type="radio" name="radio1" value="6">
-	            <label for="radio-whom-6">MS_2</label>
-            </div>
-          </div>
-          
-          <div class="text-form-of-course"> Form of this course:</div>
-
-          <div id="group3" class="radio-form-of-course">
-
-            <div class="form_radio">
-	            <input id="radio-form-1" type="radio" name="radio2" value="1" checked>
-	            <label for="radio-form-1">Block_1</label>
-            </div>
- 
-            <div class="form_radio">
-	            <input id="radio-form-2" type="radio" name="radio2" value="2">
-	            <label for="radio-form-2">Block_2</label>
-            </div>
-
-            <div class="form_radio">
-	            <input id="radio-form-3" type="radio" name="radio2" value="3">
-	            <label for="radio-form-3">Full Semester</label>
-            </div>
-
-          </div>
 
         </div>
-        
-      </div>
-      <div class="button-primary"> Add new </div>
-    </div>
+          <div class="flex-page-container">
+          <div>
+            <div class="admin-logout-wrapper">
+              <div class="admin-logo-image">
+                <img src="@/assets/images/admin_avatar.png" alt="admin avatar">
+                Admin
+              </div>
+            </div>
+            
+            <div>
+              <div class="page-label-text">
+                Add course buttons 
+                <img src="@/assets/icons/line_under_PageLabel.png" alt="rectangle_line" >
+              </div>
+
+              <div class="inputWithLabel">
+                <div>Course Name</div>
+                <div class="input-wrapper">
+                  <input type="text" class="input-field" placeholder="Course Name">
+                </div>
+              </div>
+
+              <div class="inputWithLabel">
+                <div>Professor</div>
+                <div class="input-wrapper">
+                  <input type="text" class="input-field" placeholder="Professor">
+                </div>
+              </div>
+
+              <div class="inputWithLabel">
+                <div>Room number</div>
+                <div class="input-wrapper">
+                  <input type="text" class="input-field" placeholder="Room number">
+                </div>
+              </div>
+              
+              <div class="inputWithLabel">
+                <div>Additional Lecturer</div>
+                <div class="input-wrapper">
+                  <input type="text" class="input-field" placeholder="Additional Lecturer">
+                </div>
+              </div>
+
+              <div id="group1" class="radio-online-offline">
+                <div class="form_radio">
+                  <input id="radio-online-1" type="radio" name="radio" value="1" checked>
+                  <label for="radio-online-1">Online course</label>
+                </div>
     
-      
+                <div class="form_radio">
+                  <input id="radio-online-2" type="radio" name="radio" value="2">
+                  <label for="radio-online-2">Offline course</label>
+                </div>
+              </div>
+
+              <div class="text-for-whom-course"> 
+                For whom is this course:
+              </div>
+
+              <div id="group2" class="radio-for-whom-block">
+
+                <div class="form_radio">
+                  <input id="radio-whom-1" type="radio" name="radio1" value="1" checked>
+                  <label for="radio-whom-1">BS_1</label>
+                </div>
+    
+                <div class="form_radio">
+                  <input id="radio-whom-2" type="radio" name="radio1" value="2">
+                  <label for="radio-whom-2">BS_2</label>
+                </div>
+
+                <div class="form_radio">
+                  <input id="radio-whom-3" type="radio" name="radio1" value="3">
+                  <label for="radio-whom-3">BS_3</label>
+                </div>
+
+                <div class="form_radio">
+                  <input id="radio-whom-4" type="radio" name="radio1" value="4">
+                  <label for="radio-whom-4">BS_4</label>
+                </div>
+
+                <div class="form_radio">
+                  <input id="radio-whom-5" type="radio" name="radio1" value="5">
+                  <label for="radio-whom-5">MS_1</label>
+                </div>
+
+                <div class="form_radio">
+                  <input id="radio-whom-6" type="radio" name="radio1" value="6">
+                  <label for="radio-whom-6">MS_2</label>
+                </div>
+              </div>
+              
+              <div class="text-form-of-course">
+                Form of this course:
+              </div>
+
+              <div id="group3" class="radio-form-of-course">
+
+                <div class="form_radio">
+                  <input id="radio-form-1" type="radio" name="radio2" value="1" checked>
+                  <label for="radio-form-1">Block_1</label>
+                </div>
+    
+                <div class="form_radio">
+                  <input id="radio-form-2" type="radio" name="radio2" value="2">
+                  <label for="radio-form-2">Block_2</label>
+                </div>
+
+                <div class="form_radio">
+                  <input id="radio-form-3" type="radio" name="radio2" value="3">
+                  <label for="radio-form-3">Full Semester</label>
+                </div>
+
+              </div>
+            </div>
+        </div>
+
+        <div class="button-primary">
+          Add new
+        </div>
+
+      </div>
     </div>
   </div>
 </template>
@@ -165,6 +169,10 @@ export default {
 };
 </script>
 <style scoped>
+
+.logout-admin-layout-container{
+  display: block;
+}
 
 .button-primary:hover {
   background: #ff8838d5;
