@@ -38,7 +38,7 @@
           <Button :label="'Login'" />
         </div>
       </div>
-      
+
     </div>
   </div>
 </template>
