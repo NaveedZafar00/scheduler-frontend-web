@@ -4,21 +4,21 @@
       
       <div class="menus">
         <div class="iu-logo-on-menu-page" id="iu_logo">
-          <img src="@/assets/icons/IU_logo.png" alt="UniversityImage" />
+          <img src="@/assets/icons/IU_logo.png" alt="UniversityImage" v-on:click="redirectToLogin"/>
         </div>
         
         <div class="menu-buttons">
-          <div class="add-course-button">
+          <div class="add-course-button" v-on:click="redirectToAddCourse">
             <img src="@/assets/icons/add_course.png" alt="Add logo" class="menu-icon">
             Add new course
           </div>
 
-          <div class="list-of-courses-button">
+          <div class="list-of-courses-button" v-on:click="redirectToListOfCourses">
             <img src="@/assets/icons/courses_list.png" alt="Add logo" class="menu-icon">
             List of courses
           </div>
 
-          <div class="generator-button">
+          <div class="generator-button" v-on:click="redirectToGenerator">
             <img src="@/assets/icons/timetable_generator.png" alt="Add logo" class="menu-icon">
             Generator
           </div>
@@ -36,7 +36,7 @@
             
             <div>
               <div class="page-label-text">
-                Add course buttons 
+                Add course page
                 <img src="@/assets/icons/line_under_PageLabel.png" alt="rectangle_line" >
               </div>
 
@@ -153,10 +153,25 @@
 
 <script>
 import Button from '@/components/Button.vue'
+import router from '@/router';
 
 export default {
   name: "HomeView",
   components: { Button },
+  methods:{
+    redirectToLogin(){
+      router.push({path: '../'})
+    },
+    redirectToAddCourse(){
+      router.push({ path: '../addcourse'})
+    }, 
+    redirectToListOfCourses(){
+      router.push({ path: '../listofcourses'})
+    },
+    redirectToGenerator(){
+      router.push({ path: '../generator'})
+    },
+  },
   setup() {
     function login() {
       console.log('login')
@@ -389,5 +404,80 @@ export default {
   max-width: 1440px;
   display: flex;
 }
+
+.bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: #f4511e;
+    font-size: 50px;
+  }
+  .logo {
+    color: #f4511e;
+    font-size: 200px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #f4511e;
+  }
+  .carousel-indicators li {
+    border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+    background-color: #f4511e;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid #f4511e; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #f4511e;
+    background-color: #fff !important;
+    color: #f4511e;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: #f4511e !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
 
 </style>

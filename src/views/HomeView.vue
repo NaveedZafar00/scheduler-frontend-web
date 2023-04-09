@@ -35,7 +35,7 @@
           <div class="notes">
             If you do not have access to the system, please contact the Department of Education for assistance with obtaining login credentials.
           </div>
-          <Button :label="'Login'" />
+          <Button :label="'Login'" v-on:click="redirectToAddCourse"/>
         </div>
       </div>
 
@@ -45,10 +45,16 @@
 
 <script>
 import Button from '@/components/Button.vue'
+import router from '@/router';
 
 export default {
   name: "HomeView",
   components: { Button },
+  methods:{
+    redirectToAddCourse(){
+      router.push({ path: '../addcourse'})
+    }
+  },
   setup() {
     function login() {
       console.log('login')
