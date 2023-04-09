@@ -17,7 +17,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <img src="@/assets/images/iulogo1i119-0quf.svg" style="float:left" width="200" height="50">
+      <img src="@/assets/images/iulogo1i119-0quf.svg" v-on:click="redirectToLogin" style="float:left" width="200" height="50">
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -148,8 +148,8 @@ import router from '@/router';
         router.push({ path: '../addcourse'}) //Need to add addcoursepage route..
       }, 
       ListCourse(){
-        router.push({ path: '../'}) //Need to add List of courses route..
-      }, 
+        router.push({ path: '../listofcourses'}) //Need to add List of courses route..
+      },
              
     },
     setup() {

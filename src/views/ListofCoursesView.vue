@@ -17,7 +17,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>                        
           </button>
-          <img src="@/assets/images/iulogo1i119-0quf.svg" style="float:left" width="200" height="50">
+          <img src="@/assets/images/iulogo1i119-0quf.svg" v-on:click="redirectToLogin" style="float:left" width="200" height="50">
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
@@ -184,10 +184,10 @@
             router.push({ path: '../'})
             },
           AddCourse(){
-            router.push({ path: '../'}) //Need to add addcoursepage route..
+            router.push({ path: '../addcourse'}) //Need to add addcoursepage route..
           }, 
           ListCourse(){
-            router.push({ path: '../'}) //Need to add List of courses route..
+            router.push({ path: '../listofcourses'}) //Need to add List of courses route..
           }, 
                  
         },
@@ -517,6 +517,48 @@
         -webkit-animation-duration: 1s;
         visibility: visible;
       }
+      .input-wrapper button {
+        margin-left: -40px;
+      }
+      .notes {
+        font-size: 12px;
+        margin-top: 49px;
+        margin-bottom: 49px;
+      }
+      .login-form {
+        width: 460px;
+      }
+      .inputWithLabel{
+        text-align: left;
+        font-size: 14px;
+        margin-top: 48.75px;
+      }
+      .input-field {
+        border-radius: 10px;
+        border: 1px solid #CBD3DC; 
+        width: 95%;
+        height: 40px;
+        padding: 0 10px;
+        font-size: 16px;
+      }
+      .input-field:focus {
+        outline: none !important;
+        border: 1px solid #FF8838; 
+      }
+      .mainWrapper {
+        max-width: 1440px;
+        display: flex;
+        justify-content: center;
+      }
+      .login-form-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+      }
+
+      
+
       @keyframes slide {
         0% {
           opacity: 0;
