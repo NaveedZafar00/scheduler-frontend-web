@@ -27,10 +27,19 @@
         </div>
           <div class="flex-page-container">
           <div>
-            <div class="admin-logout-wrapper">
-              <div class="admin-logo-image">
-                <img src="@/assets/images/admin_avatar.png" alt="admin avatar">
-                Admin
+            <div class="admin-logout-container">
+              <div class="admin-logout-wrapper">
+                <div class="admin-logo-image">
+                  <img src="@/assets/images/admin_avatar.png" alt="admin avatar">
+                </div>
+                <div>
+                  <div>
+                  Admin
+                  </div>
+                  <div>
+                    <Button :label="'Logout'" :hasImg="true"/>
+                  </div>
+                </div>
               </div>
             </div>
             
@@ -342,15 +351,18 @@ export default {
 }
 
 .admin-logo-image{
-  padding-left: 980px;
+  /* padding-left: 980px;
   padding-top: 13px;
   padding-right: 50px;
-  padding-bottom: 13px;
+  padding-bottom: 13px; */
 }
 
 .admin-logout-wrapper{
-  width: 1188px;
-  height: 84px;
+  /* width: 1188px;
+  height: 84px; */
+  display: flex;
+  align-items: center;
+  gap: 15px
 }
 
 .generator-button{
@@ -479,5 +491,10 @@ export default {
     color: #aaa;
     font-size: 14px;
   }
+.admin-logout-container {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
 
+}
 </style>

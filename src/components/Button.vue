@@ -1,12 +1,15 @@
 <template>
-    <div class="button-primary">{{ label }}</div>
+  
+    <div class="button-primary">
+      <img v-if="true" src="../assets/icons/logout.png" alt="">{{ label }}
+      </div>
 </template>
 <script>
 
 export default {
   name: "Button",
   components: {},
-  props: ['label'],
+  props: ['label', 'hasImg'],
   setup(props) {
     console.log(props)
   }
@@ -15,6 +18,10 @@ export default {
   
   <style scoped>
   .button-primary {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
   background: #FF8838;
   border-radius: 16px;
   padding: 16px;
