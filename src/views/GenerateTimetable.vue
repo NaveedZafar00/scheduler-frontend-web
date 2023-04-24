@@ -17,7 +17,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <img src="@/assets/images/iulogo1i119-0quf.svg" v-on:click="redirectToLogin" style="float:left" width="200" height="50">
+      <img src="@/assets/images/iulogo1i119-0quf.svg" style="float:left" width="200" height="50">
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -91,7 +91,7 @@
     </div>
     <div class="row">
         <div class="col-md-8" style="position: relative; left: 30px; top: 60px; background-color: #fafafa;" >
-          <div>
+          <!-- <div>
             <ul>
                 <li>
                     <div class="generator-placeholder">
@@ -103,10 +103,94 @@
                         </span>
                     </div>
                 </li>
-          </ul>
+	        </ul>
+          </div> -->
           
-          </div>
          
+          <div class="timetable">
+          <div class="week-names" style="font-weight:bold">
+          <div>monday</div>
+    <div>tuesday</div>
+    <div>wednesday</div>
+    <div>thursday</div>
+    <div>friday</div>
+    <div class="weekend">saturday</div>
+    <div class="weekend">sunday</div>
+  </div>
+  <div class="time-interval" style="font-weight:bold">
+    <div>8:00 - 10:00</div>
+    <div>10:00 - 12:00</div>
+    <div>12:00 - 14:00</div>
+    <div>14:00 - 16:00</div>
+    <div>16:00 - 18:00</div>
+    <div>18:00 - 20:00</div>
+  </div>
+  <div class="content">
+    <div>
+      <div class="accent-orange-gradient"></div>
+    </div>
+    <div></div>
+    <div></div>
+    <div></div>
+        <div>
+      <div class="accent-green-gradient"></div>
+    </div>
+    <div class="weekend"></div>
+    <div class="weekend"></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div>
+      <div class="accent-cyan-gradient"></div>
+    </div>
+    <div></div>
+    <div class="weekend"></div>
+    <div class="weekend"></div>
+    <div>
+      <div class="accent-pink-gradient"></div>
+    </div>
+    <div></div>
+    <div>
+      <div class="accent-purple-gradient"></div>
+    </div>
+    <div></div>
+    <div></div>
+    <div class="weekend"></div>
+    <div class="weekend"></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div class="weekend"></div>
+    <div class="weekend"></div>
+    <div>
+      <div class="accent-purple-gradient"></div>
+    </div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div class="weekend"></div>
+    <div class="weekend"></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div class="weekend"></div>
+    <div class="weekend"></div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
           <div>
           <button class="btn btn-success" v-on:click="GenerateTimeTable" style="position: relative;top: 50px;float: left; background-color: #f4511e;font-family: Montserrat;color:#fafafa;">
             Generate PDF
@@ -133,6 +217,8 @@
   
 import Button from '@/components/Button.vue'
 import router from '@/router';
+import '@/assets//dist/css/TimeTable.css';
+
   export default {
     name: "HomeView",
     components: { Button },
@@ -145,11 +231,11 @@ import router from '@/router';
         router.push({ path: '../'})
         },
       AddCourse(){
-        router.push({ path: '../addcourse'}) //Need to add addcoursepage route..
+        router.push({ path: '../'}) //Need to add addcoursepage route..
       }, 
       ListCourse(){
-        router.push({ path: '../listofcourses'}) //Need to add List of courses route..
-      },
+        router.push({ path: '../'}) //Need to add List of courses route..
+      }, 
              
     },
     setup() {
@@ -157,7 +243,102 @@ import router from '@/router';
         console.log('login')
       }
       return {
-        login,
+        time:[
+  {
+    "group": "Group 1",
+    "study": [
+      {
+        "day": "Monday",
+        "periods": [
+          {
+            "startTime": "9:00",
+            "endTime": "10:30",
+            "subject": "subject 1",
+            "numberOfStudents": 34,
+            "instructor": "instructor 1",
+            "room": 110
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "12:00",
+            "subject": "subject 2",
+            "numberOfStudents": 35,
+            "instructor": "instructor 2",
+            "room": 108
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "startTime": "9:00",
+            "endTime": "10:30",
+            "subject": "subject 1",
+            "numberOfStudents": 45,
+            "instructor": "instructor 1",
+            "room": 111
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "12:00",
+            "subject": "subject 2",
+            "numberOfStudents": 35,
+            "instructor": "instructor 2",
+            "room": 104
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "group": "Group 2",
+    "study": [
+      {
+        "day": "Monday",
+        "periods": [
+          {
+            "startTime": "9:00",
+            "endTime": "10:30",
+            "subject": "subject 1",
+            "numberOfStudents": 32,
+            "instructor": "instructor 1",
+            "room": 110
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "12:00",
+            "subject": "subject 2",
+            "numberOfStudents": 37,
+            "instructor": "instructor 2",
+            "room": 108
+          }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "periods": [
+          {
+            "startTime": "9:00",
+            "endTime": "10:30",
+            "subject": "subject 1",
+            "numberOfStudents": 30,
+            "instructor": "instructor 1",
+            "room": 111
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "12:00",
+            "subject": "subject 2",
+            "numberOfStudents": 25,
+            "instructor": "instructor 2",
+            "room": 104
+          }
+        ]
+      }
+    ]
+  }
+]
       }
     },
   };
